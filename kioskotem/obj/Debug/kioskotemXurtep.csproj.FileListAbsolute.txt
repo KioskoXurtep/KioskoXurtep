@@ -1,0 +1,7 @@
+D:\Original\kiosko xurtep\kioskotem\bin\kioskotem.dll
+D:\Original\kiosko xurtep\kioskotem\bin\kioskotem.pdb
+D:\Original\kiosko xurtep\kioskotem\bin\Telerik.Web.UI.dll
+D:\Original\kiosko xurtep\kioskotem\bin\Telerik.Web.UI.xml
+D:\Original\kiosko xurtep\kioskotem\obj\Debug\kioskotem.dll
+D:\Original\kiosko xurtep\kioskotem\obj\Debug\kioskotem.pdb
+D:\Original\kiosko xurtep\kioskotem\obj\Debug\kioskotemXurtep.csprojResolveAssemblyReference.cache
