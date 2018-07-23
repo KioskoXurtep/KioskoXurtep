@@ -14,6 +14,12 @@ namespace kioskotem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                Session.Abandon();
+                Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", ""));
+
+            }
 
         }
 
@@ -21,6 +27,10 @@ namespace kioskotem
         {
             try
             {
+                Session["objusuario"] = " ";
+                Session["idusuario"] = " ";
+                Session["idcodigo"] = " ";
+
                 IsvcOperadoraMxClient Manejador = new IsvcOperadoraMxClient();
                 Tabla MiTabla = Manejador.getEjecutaStoredProcedure1("getvalidarusuariok", txtcodigo.Text.Replace(" ", "X") + "|" + txtusuario.Text.Replace(" ", "X") + "|" + txtcontra.Text.Replace(" ", "X"));
                 if (MiTabla != null)
@@ -100,6 +110,11 @@ namespace kioskotem
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
             Response.Redirect("Recuperar.aspx");
+        }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Soporte.aspx");
         }
     }
 }

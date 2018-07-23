@@ -1011,6 +1011,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Recuperar.aspx" />
+    <Content Include="Soporte.aspx" />
     <Content Include="ValidarEmail.aspx" />
     <Content Include="Verificar.aspx" />
     <Content Include="viaje\comprobante.aspx" />
@@ -1214,6 +1215,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Soporte.aspx.cs">
+      <DependentUpon>Soporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Soporte.aspx.designer.cs">
+      <DependentUpon>Soporte.aspx</DependentUpon>
     </Compile>
     <Compile Include="ValidarEmail.aspx.cs">
       <DependentUpon>ValidarEmail.aspx</DependentUpon>

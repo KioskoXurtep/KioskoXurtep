@@ -89,8 +89,10 @@ namespace kioskotem
 
                 //Response.Redirect("~/ClienteRegistrado.aspx");
 
-                ScriptManager.RegisterStartupScript(this.UpdatePanel1, typeof(string), "alerta", "alert('Revise su correo electronico se le ha enviado un mensaje de verificación.');", true);
-               
+                //ScriptManager.RegisterStartupScript(this.UpdatePanel1, typeof(string), "alerta", "alert('Revise su correo electronico se le ha enviado un mensaje de verificación.');", true);
+                ScriptManager.RegisterStartupScript(this.UpdatePanel1, typeof(string), "alerta", "validarart();", true);
+
+
             }
 
         }
